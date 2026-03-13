@@ -1,0 +1,29 @@
+.flower{
+    width: 150px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 25px 30px 25px 30px;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 2px solid black; /* added border width, style, and color */
+    border-width: 6px;
+}
+
+.logo2 {
+    width: 120px;
+    height: 130px;
+}
+
+.flower:hover {
+    transform: scale(1.1);
+    transition: 0.3s ease;
+    background-color: #ffb6c1;
+}
+
+.flower-image {
+    width: 500px;
+    height: 500px;
+}

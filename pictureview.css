@@ -1,0 +1,25 @@
+.pictureview {
+    width: 150px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 40px 30px 40px 30px;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 2px solid black; /* added border width, style, and color */
+    border-width: 6px;
+
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+}
+
+.pictureview:hover {
+    transform: scale(1.1);
+    transition: 0.3s ease;
+    background-color: #ffb6c1;
+}

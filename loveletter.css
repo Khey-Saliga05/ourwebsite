@@ -1,0 +1,25 @@
+.loveletter {
+    width: 150px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 35px 30px 35px 30px;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 2px solid black; /* added border width, style, and color */
+    border-width: 6px;
+
+}
+
+.logo3 {
+    width: 110px;
+    height: 110px;
+}
+
+.loveletter:hover {
+    transform: scale(1.1);
+    transition: 0.3s ease;
+    background-color: #ffb6c1;
+}

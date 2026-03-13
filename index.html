@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hehe</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="pictureview.css">
+    <link rel="stylesheet" href="youtube.css">
+    <link rel="stylesheet" href="flower.css">
+    <link rel="stylesheet" href="loveletter.css">
+    <link rel="stylesheet" href="imgbutton.css">
+    <link rel="stylesheet" href="album.css">
+</head>
+
+<body class="body">
+    <div class="page1">
+        <img src="cat.gif" class="cat">
+        <h1 class="title">Hello</h1>
+        <h1 class="title1">My Love!</h1>
+        <p class="description">Wanna see something cool?</p>
+
+        <div class="buttons">
+            <button class="yes">YES, PLEASE!</button>
+            <button class="no">NURRR</button>
+        </div>
+    </div>
+
+    <div class="page2">
+        <button class="back-button" onclick="goBack()">Back</button>
+
+        <img src="happycat.gif" class="cat1">
+        <h1 class="title1">These are for you po hehe</h1>
+        <p class="description">I hope that you like it, ILoveYouuuuuuu!!!!!</p>
+
+        <div class="contents">
+            <div class="pictureview">
+                <button class="img-button" onclick="openPictureViewer()">
+                    <img src="pictureviewer.png" class="logo">
+                </button>
+            </div>
+
+            <div class="youtube">
+                <button class="img-button" onclick="openYouTube()">
+                    <img src="youtube.png" class="logo1">
+                </button>
+            </div>
+
+            <div class="flower">
+                <button class="img-button" onclick="openFlower()">
+                    <img src="flower.png" class="logo2">
+                </button>
+            </div>
+
+            <div class="loveletter">
+                <button class="img-button" onclick="openLoveLetter()">
+                    <img src="loveletter.png" class="logo3">
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="page3">
+        <img src="sadcat.gif" class="cat2">
+        <h1 class="title1">I promise that you'll like it</h1>
+        <div class="buttons">
+            <button class="okay">Okay</button>
+        </div>
+    </div>
+
+
+    <div class="page4" alt="picture viewer">
+        <button class="back-button" onclick="goBack()">Back</button>
+        <h1 class="header1">Our Gallery</h1>
+
+        <div class="album-container">
+            <div class="album">
+                <p class="album-description">My Baby</p>
+                <div class="album-images">
+                    <img src="photo/photo.jpg" class="album-image">
+                    <img src="photo/photo1.jpg" class="album-image">
+                    <img src="photo/photo2.jpg" class="album-image">
+                    <img src="photo/photo3.jpg" class="album-image">
+                    <img src="photo/photo4.jpg" class="album-image">
+                    <img src="photo/photo5.jpg" class="album-image">
+                    <img src="photo/photo6.jpg" class="album-image">
+                    <img src="photo/photo7.jpg" class="album-image">
+                    <img src="photo/photo8.jpg" class="album-image">
+                    <img src="photo/photo9.jpg" class="album-image">
+                    <img src="photo/photo10.jpg" class="album-image">
+                    <img src="photo/photo11.jpg" class="album-image">
+                    <img src="photo/photo12.jpg" class="album-image">
+                    <img src="photo/photo13.jpg" class="album-image">
+                    <img src="photo/photo14.jpg" class="album-image">
+                    <img src="photo/photo15.jpg" class="album-image">
+                    <img src="photo/photo16.jpg" class="album-image">
+                    <img src="photo/photo17.jpg" class="album-image">
+                    <img src="photo/photo19.jpg" class="album-image">
+                    <img src="photo/photo19.jpg" class="album-image">
+                    <img src="photo/photo20.jpg" class="album-image">
+                    <img src="photo/photo21.jpg" class="album-image">
+                    <img src="photo/photo22.jpg" class="album-image">
+                    <img src="photo/photo23.jpg" class="album-image">
+                    <img src="photo/photo24.jpg" class="album-image">
+                    <img src="photo/photo25.jpg" class="album-image">
+                    <img src="photo/photo26.jpg" class="album-image">
+                    <img src="photo/photo27.jpg" class="album-image">
+                    <img src="photo/photo28.jpg" class="album-image">
+                </div>
+            </div>
+
+            <div class="album">
+                <p class="album-description">My Baby and Me</p>
+                <div class="album-images">
+                    <img src="photo/us.jpg" class="album-image">
+                    <img src="photo/us1.jpg" class="album-image">
+                    <img src="photo/us2.jpg" class="album-image">
+                    <img src="photo/us3.jpg" class="album-image">
+                    <img src="photo/us4.jpg" class="album-image">
+                    <img src="photo/us5.jpg" class="album-image">
+                    <img src="photo/us6.jpg" class="album-image">
+                    <img src="photo/us7.jpg" class="album-image">
+                    <img src="photo/us8.jpg" class="album-image">
+                    <img src="photo/us9.jpg" class="album-image">
+                    <img src="photo/us10.jpg" class="album-image">
+                    <img src="photo/us11.jpg" class="album-image">
+                    <img src="photo/us12.jpg" class="album-image">
+                    <img src="photo/us13.jpg" class="album-image">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page5" alt="video">
+        <h1 class="header1">A Special Song 4 U</h1>
+        <button class="back-button" onclick="goBack()">Back</button>
+
+        <div class="video-container">
+            <video width="560" height="315" controls loop>
+                <source src="videos/mvid.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <img src="dancingcat.gif" class="dancing-cat">
+        </div>
+    </div>
+
+    <div class="page6" alt="flower">
+        <button class="back-button" onclick="goBack()">Back</button>
+        <h1 class="header1">My Virtual Flowers 4 U</h1>
+        <img src="flowercat.gif" class="flower-image">
+    </div>
+
+    <div class="page7" alt="love letter">
+        <button class="back-button" onclick="goBack()">Back</button>
+        <h1 class="header1">My Love Letter</h1>
+        <div class="love-letter-container">
+            <p class="love-letter-text">
+                Dear Bebe,<br><br>
+
+                From the moment I met you, my world has changed for the better. You are the reason why i am now capable
+                of changing my ways on how to carry not just myself but also our relationship. I learned how to love and
+                care for someone other than myself, and that someone is you. For all the things that you brought into my
+                life, I am grateful for it all. And now, nothing is more important than to settle with you and make a
+                family of our own. I want to spend the rest of my life with you. I want to be the one who will always be
+                there for you, through the good times and the bad. I want to be the one who will support you in all your
+                dreams and aspirations. I want to be the one who will make you laugh when you're feeling down, and the
+                one who will hold you when you need comfort. I will be there no matter what happens.<br><br>
+                Sincerely Yours,<br>
+                Khey
+            </p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

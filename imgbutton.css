@@ -1,0 +1,11 @@
+.img-button{
+    border-color: transparent;
+    padding: 0;
+    transition: all 0.3s ease;
+    background-color: transparent;
+}
+
+.img-button:hover {
+    transform: scale(1.1);
+    border-color: transparent;
+}

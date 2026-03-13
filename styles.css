@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Playlist+Script&family=Dancing+Script:wght@400;700&display=swap');
+
+.body {
+    margin: 0;
+    padding: 0;
+    background-image: url('paper.jpg');
+    background-size: cover;
+}
+
+.cat {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: -40px;
+}
+
+.cat1 {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: -40px;
+}
+
+.cat2 {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: -40px;
+}
+
+.page1 {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* stack items vertically */
+    justify-content: center;
+    /* vertical center */
+    align-items: center;
+    /* horizontal center */
+    text-align: center;
+    /* center text inside */
+}
+
+.page2 {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* stack items vertically */
+    justify-content: center;
+    /* vertical center */
+    align-items: center;
+    /* horizontal center */
+    text-align: center;
+    /* center text inside */
+}
+
+.page3 {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* stack items vertically */
+    justify-content: center;
+    /* vertical center */
+    align-items: center;
+    /* horizontal center */
+    text-align: center;
+    /* center text inside */
+}
+
+.title {
+    font-size: 3rem;
+    font-family: 'Playlist Script', cursive;
+    margin-bottom: -60px;
+}
+
+.title1 {
+    font-size: 4rem;
+    color: #dc143c;
+    font-family: 'Playlist Script', cursive;
+    margin-bottom: 20px;
+}
+
+.description {
+    font-size: 30px;
+    max-width: 600px;
+    margin-top: -20px;
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+}
+
+.buttons{
+    display:flex;
+    gap:10px;
+    margin-top: -20px;
+    font-family: Arial, Helvetica, sans-serif;
+    flex-direction: row;
+    transition: 0.3s ease;
+}
+
+.yes, .no, .okay {
+    margin-top: 30px;
+    font-size: 20px;
+    color: black;
+    border: 3px solid crimson;
+    border-radius: 50px;
+    cursor: pointer;
+    font-family: 'Playlist Script', cursive;
+    padding: 10px 40px 10px 40px;
+    background-color: transparent;
+    transition: 0.3s ease;
+}
+
+.yes:hover{
+    background-color: #ffb6c1;
+    transform: scale(1.1);
+}
+
+.no:hover{
+    background-color: #ffb6c1;
+    transform: scale(1.1);
+}
+
+.okay:hover{
+    background-color: #ffb6c1;
+    transform: scale(1.1);
+}
+
+/* Hide pages initially and set up fade transition */
+/* Hide ALL pages */
+.page1,
+.page2,
+.page3,
+.page4,
+.page5,
+.page6,
+.page7{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+
+    opacity:0;
+    visibility:hidden;
+
+    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+}
+
+/* Active page */
+.page1.active,
+.page2.active,
+.page3.active,
+.page4.active,
+.page5.active,
+.page6.active,
+.page7.active{
+    opacity:1;
+    visibility:visible;
+}
+
+.contents {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 8px 15px;
+    font-size: 16px;
+    border-radius: 8px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #ffb6c1;
+    background-color: white;
+    cursor: pointer;
+}
+
+.back-button:hover {
+    background-color: #ffb6c1;
+}
+
+.video-container {
+    position: relative; /* makes GIF position relative to this container */
+    width: 560px;       /* same as video width */
+    height: 315px;      /* same as video height */
+    margin: 20px auto;  /* centers container horizontally */
+}
+
+.dancing-cat {
+    position: absolute;
+    bottom: -10px;  /* distance from bottom of video */
+    right: -100px;   /* distance from right of video */
+    width: 100px;   /* adjust size if needed */
+    height: 100px;
+    z-index: 10;   /* on top of video */
+}
+
+.love-letter-container {
+    position: relative;          /* not absolute, so it stays in flow */
+    width: 80%;                  /* responsive width */
+    max-width: 600px;
+    max-height: 70vh;            /* limits height to 70% of viewport */
+    margin: 20px auto;           /* center horizontally */
+    padding: 20px;
+    border: 3px groove #dc143c;
+    background-color: rgba(255, 255, 255, 0.8); /* optional for readability */
+    overflow-y: auto;            /* enables scrolling if content exceeds height */
+    border-radius: 15px;
+    margin-top: 70px;
+}
+
+.love-letter-text {
+    font-size: 2rem;           /* smaller and responsive font */
+    font-family: 'Dancing Script', cursive;
+    color: #dc143c;
+    line-height: 1.6;
+    text-align: justify;
+}
